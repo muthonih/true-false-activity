@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: powderblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.option {
+    cursor: pointer;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #e6e6e6;
+}
+
+.option.selected {
+    background-color: #ffeb3b;
+}
+
+.correct::after {
+    content: "✔️";
+    color: green;
+    margin-left: 10px;
+}
+
+.incorrect::after {
+    content: "❌";
+    color: red;
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#submit {
+    background-color: #28a745;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+#redo {
+    background-color: #dc3545;
+}
+
+#redo:hover {
+    background-color: #c82333;
+}
